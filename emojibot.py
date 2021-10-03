@@ -94,7 +94,7 @@ async def emoji_help(ctx): #Displays help menu that shows user available command
 async def emoji_send(ctx,type,quantity='1'): #Default quantity to 1
     # Set up some thresholds
     emoji_thresh = 54 # 2 lines worth of emojis, discord's max per message is higher but this is neater
-    max_emojis = 999 # Limits the spamming of emojis by bad actors
+    max_emojis = 99999 # Limits the spamming of emojis by bad actors
 
     await ctx.message.delete() # Deletes the user's command for streamlined visuals
 
